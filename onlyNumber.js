@@ -18,6 +18,6 @@ function soloNumeros(event){
 }
 
 //Get Code de las letras
-$("#textinput").keydown(function(e) {
-  console.log(e.keyCode); // this value
+$('CONTENT').keydown(function(event){
+  soloNumeros(event);
 });
