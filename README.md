@@ -1,6 +1,10 @@
-# Solo-Number-cualquiera-JavaScript
+# Discriminacion de teclas.
+
 Permitir solo numeros  o modificarla para permitir solo lo que queramos
 
+<pre rel="JavaScript" class=" language-javascript"><code class=" language-javascript">$<span class="token punctuation">(</span><span class="token string">"#textinput"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">keydown<span class="token punctuation">(</span></span><span class="token keyword">function</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span>keyCode<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// this value
+</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
 <table class="chart">
 <tbody>
