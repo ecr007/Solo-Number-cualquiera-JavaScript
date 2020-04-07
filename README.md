@@ -2,9 +2,31 @@
 
 Permitir solo numeros  o modificarla para permitir solo lo que queramos
 
-<pre rel="JavaScript" class=" language-javascript"><code class=" language-javascript">$<span class="token punctuation">(</span><span class="token string">"#textinput"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">keydown<span class="token punctuation">(</span></span><span class="token keyword">function</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    e<span class="token punctuation">.</span>keyCode<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// this value
-</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+```javascript
+$("#textinput").keydown(function(e) {
+    e.keyCode; // this value
+});
+```
+
+# Usando Jquery V2020
+```javascript
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+
+    console.log(charCode);
+
+    if (charCode > 31 && (charCode < 48 || charCode > 57 || charCode == 16)){
+
+        event.preventDefault(); 
+    }
+
+    return true;
+}
+
+$(document).on("keydown keypress",".only-number",function(event){
+    isNumberKey(event);
+});
+```
 
 <table class="chart">
 <tbody>
